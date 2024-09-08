@@ -7,7 +7,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <nav class="navbar" id="navbar">
+        <a href="index.html">Personal-info</a>
+        <a href="education.html">Education</a>
+        <a href="skills.html">Skills</a>
+    </nav>
+        <div class="container" id="container">
+            <h1>Personal information</h1>
+            <form id="cv-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="experience">Experience:</label>
+                    <textarea id="experience" rows="4" required></textarea>
+                </div>
+                <button type="submit">Generate CV</button>
+            </form>
+            <div id="cv-output" class="cv-output">
+                <!-- Output will be displayed here -->
+            </div>
+        </div>
 
     <script src="script.js"></script>
 </body>
