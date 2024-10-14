@@ -97,20 +97,14 @@ button:hover {
     }
 }
 
-@media only screen and (min-width: 641px) and ( max-width: 1024px) {
-    .container{
-        background-color: blue;
-    }
+/* @media only screen and (min-width: 641px) and ( max-width: 1024px) {
+    
 }
 
 @media (min-width: 1025px) and ( max-width: 1440px) {
-    .container{
-        background-color: red;
-    }
+    
 }
 
 @media (min-width: 1441px) {
-    .container{
-        background-color: red;
-    }
-}
+    
+} */
