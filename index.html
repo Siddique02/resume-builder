@@ -12,12 +12,18 @@
         <a href="education.html">Education</a>
         <a href="skills.html">Skills</a>
     </nav>
+    
         <div class="container" id="container">
-            <h1>Personal information</h1>
+            <h1 class="heading">Build your CV</h1>
+
             <form id="cv-form">
                 <div class="form-group">
-                    <label for="name">Name:</label>
+                    <label for="name">Full name:</label>
                     <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="designation">Designation:</label>
+                    <input type="text" id="designation" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email:</label>
@@ -28,15 +34,122 @@
                     <input type="tel" id="phone" required>
                 </div>
                 <div class="form-group">
-                    <label for="experience">Experience:</label>
-                    <textarea id="experience" rows="4" required></textarea>
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" required>
                 </div>
+
+                <div class="input-division"></div>
+
+                <div class="form-group">
+                    <label for="university">University:</label>
+                    <div class="educations">
+                        <div class="edu-sub">
+                            <h5>From</h5>
+                            <input type="date" id="period-1a" required>
+                            <h5>To</h5>
+                            <input type="date" id="period-1b" required>
+                        </div>
+                        <input type="text" id="education1" placeholder="Institute name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="college">College:</label>
+                    <div class="educations">
+                        <div class="edu-sub">
+                            <h5>From</h5>
+                            <input type="date" id="period-2a" required>
+                            <h5>To</h5>
+                            <input type="date" id="period-2b" required>
+                        </div>
+                        <input type="text" id="education2" placeholder="Institute name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="school">School:</label>
+                    <div class="educations">
+                        <div class="edu-sub">
+                            <h5>From</h5>
+                            <input type="date" id="period-3a" required>
+                            <h5>To</h5>
+                            <input type="date" id="period-3b" required>
+                        </div>
+                        <input type="text" id="education3" placeholder="Institute name" required>
+                    </div>
+                </div>
+
+                <div class="input-division"></div>
+
+                <div class="form-group">
+                    <label for="skills">Skills:</label>
+                    <div class="skill-boxes">
+
+                        <div class="check">
+                            <input type="checkbox" id="skill1" value="HTML">
+                            HTML
+                        </div>
+                        <div class="check">
+                            <input type="checkbox" id="skill2" value="CSS">
+                            CSS
+                        </div>
+                        <div class="check">
+                            <input type="checkbox" id="skill3" value="JavaScript">
+                            JavaScript
+                        </div>
+                        <div class="check">
+                            <input type="checkbox" id="skill4" value="TypeScript">
+                            TypeScript
+                        </div>
+                        <div class="check">
+                            <input type="checkbox" id="skill5" value="Python">
+                            Python
+                        </div>
+                        <div class="check">
+                            <input type="checkbox" id="skill6" value="React">
+                            React
+                        </div>
+                        <div class="check">
+                            <input type="checkbox" id="skill7" value="Next">
+                            Next
+                        </div>
+                        <div class="check">
+                            <input type="checkbox" id="skill8" value="Django">
+                            Django
+                        </div>
+                        <div class="check">
+                            <input type="checkbox" id="skill9" value="Tailwind">
+                            Tailwind
+                        </div>
+                        <div class="check">
+                            <input type="checkbox" id="skill10" value="Git and GitHub">
+                            Git and GitHub
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="input-division"></div>
+                
+                <div class="form-group">
+                    <label for="experience">Experience:</label>
+                    <div class="experience">
+                        <div class="exp-sub">
+                            <h5>From</h5>
+                            <input type="number" min="1990" max="2025" id="exp-period1" required>
+                            <h5>To</h5>
+                            <input type="number" min="1990" max="2025" id="exp-period2" required>
+                        </div>
+                        <input type="text" id="experience" placeholder="Organization name" required>
+                    </div>
+                </div> 
+
                 <button type="submit">Generate CV</button>
             </form>
+
             <div id="cv-output" class="cv-output">
                 <!-- Output will be displayed here -->
             </div>
         </div>
+
 
     <script src="script.js"></script>
 </body>

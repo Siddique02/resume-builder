@@ -6,23 +6,25 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #dcffb4;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background-image: url("gradient-black-background-with-wavy-lines_52683-76100.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .navbar {
-    background-color: #000000d2;
+    background-color: #ff0000d2;
+    box-shadow: inset 0px -5px 20px rgba(0, 0, 0, 0.6);
     width: 100%;
     height: 7vh;
     position: fixed;
     top: 0;
-    color: #fff;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,22 +32,21 @@ body {
 
 .navbar a{
     text-decoration: none;
-    color: #ffffff;
+    color: #000000;
     font-weight: bold;
     margin: 0 2vw;
 }
 
 .container {
-    background: #fff;
+    background-color: #6b58be;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 30rem;
-    margin-top: 2rem;
-    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5)
+    margin-top: 6rem;
+    box-shadow: 0 0 30px rgba(255, 251, 20, 0.514);
 }
 
-h1 {
+.heading {
     margin-bottom: 20px;
     text-align: center;
 }
@@ -68,7 +69,7 @@ input, textarea {
 }
 
 button {
-    background-color: #007bff;
+    background-color: #000000;
     color: #fff;
     border: none;
     padding: 10px;
@@ -78,22 +79,103 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #7abaff;
 }
 
-.cv-output {
+.cv_output {
     margin-top: 20px;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
+    background-color: aqua;
+    overflow: hidden;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.cv_output h3{
+    margin-bottom: 20px;
+}
+
+
+.educations{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.edu-sub{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.dynamic-edu{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 5px;
+}
+.edu1{
+    margin-bottom: 50px;
+    word-wrap: break-word;
+}
+
+.skill-boxes{
+    display: flex;
+    row-gap: 10px;
+    column-gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.check{
+    display: flex;
+    gap: 5px;
+    white-space: nowrap;
+}
+
+.experience{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.exp-sub{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+
+.division{
+    height: 2px;
+    width: 400px;
+    margin: 20px 0px;
+    background-color: #00000060;
+}
+.input-division{
+    height: 2px;
+    width: 100%;
+    margin: 20px 0px;
+    background-color: #00000060;
+}
+
 
 
 
 @media (max-width: 640px) {
     .container{
-        background-color: #ffe600;
         width: 300px;
+    }
+    .edu-sub{
+        display: flex;
+        flex-direction: column;
+    }
+    .exp-sub{
+        display: flex;
+        flex-direction: column;
     }
 }
 
