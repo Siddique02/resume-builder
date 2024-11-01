@@ -15,7 +15,11 @@ interface CVFormData {
     period3a: string;
     period3b: string;
     education3: string;
-    experience: string;
+    exp1: string;
+    exp2: string;
+    organization: string;
+    github: string;
+    linkedin: string;
 }
 
 // Get the form elements
@@ -71,7 +75,13 @@ if (personalInfoForm) {
         const skill9 = (document.getElementById("skill9") as HTMLInputElement).value;
         const skill10 = (document.getElementById("skill10") as HTMLInputElement).value;
 
-        const experience = (document.getElementById("experience") as HTMLTextAreaElement).value;
+        const exp1 = (document.getElementById("exp-period1") as HTMLTextAreaElement).value;
+        const exp2 = (document.getElementById("exp-period2") as HTMLTextAreaElement).value;
+        const organization = (document.getElementById("org-name") as HTMLTextAreaElement).value;
+
+        const github = (document.getElementById("github") as HTMLInputElement).value;
+        const linkedin = (document.getElementById("linkedin") as HTMLInputElement).value;
+
 
 
 
@@ -91,7 +101,11 @@ if (personalInfoForm) {
             period3a,
             period3b,
             education3,
-            experience,
+            exp1,
+            exp2,
+            organization,
+            github,
+            linkedin,
         };
 
 
@@ -142,7 +156,28 @@ if (personalInfoForm) {
 
                 <div class="division"></div>
 
-                <p><strong>Experience:</strong> ${cvData.experience}</p>
+                <h3>Experience</h3>
+                <div class= "exp-period">
+                    <p><strong>From: </strong>${cvData.exp1}</p>
+                    <p><strong>To: </strong>${cvData.exp2}</p>
+                </div>
+                <p><strong>Organization: </strong>${cvData.organization}</p>
+
+                <div class="division"></div>
+
+                <h3>Socials</h3>
+                <div class="dynamic-github">
+                    <img src="/github.png" alt="" width="25" height="25">
+                    <p>${cvData.github}</p>
+                </div>
+
+                <div class="dynamic-linkedin">
+                    <img src="/linkedin.png" alt="" width="25" height="25">
+                    <p>${cvData.linkedin}</p>
+                </div>
+
+                <div class="division"></div>
+
             </div>
         `;
 

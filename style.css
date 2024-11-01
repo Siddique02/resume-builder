@@ -43,6 +43,7 @@ body {
     border-radius: 8px;
     width: 30rem;
     margin-top: 6rem;
+    margin-bottom: 7rem;
     box-shadow: 0 0 30px rgba(255, 251, 20, 0.514);
 }
 
@@ -99,7 +100,6 @@ button:hover {
     margin-bottom: 20px;
 }
 
-
 .educations{
     display: flex;
     flex-direction: column;
@@ -147,6 +147,36 @@ button:hover {
     gap: 12px;
 }
 
+.exp-period{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 5px;
+}
+
+.center-label{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: x-large;
+}
+
+.github{
+    margin-bottom: 20px;
+}
+
+.dynamic-github{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    padding-left: 15px;
+}
+.dynamic-linkedin{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+
 
 
 .division{
@@ -179,11 +209,14 @@ button:hover {
     }
 }
 
-/* @media only screen and (min-width: 641px) and ( max-width: 1024px) {
-    
-}
+/* @media only screen and (min-width: 1400px){
+    .container{
+        width: 40rem;
+    }
+} */
 
-@media (min-width: 1025px) and ( max-width: 1440px) {
+
+/* @media (min-width: 1025px) and ( max-width: 1440px) {
     
 }
 

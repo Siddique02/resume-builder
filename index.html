@@ -40,6 +40,7 @@
 
                 <div class="input-division"></div>
 
+                <label class="center-label" for="education">Education</label>
                 <div class="form-group">
                     <label for="university">University:</label>
                     <div class="educations">
@@ -80,7 +81,7 @@
                 <div class="input-division"></div>
 
                 <div class="form-group">
-                    <label for="skills">Skills:</label>
+                    <label class="center-label" for="skills">Skills</label>
                     <div class="skill-boxes">
 
                         <div class="check">
@@ -130,7 +131,7 @@
                 <div class="input-division"></div>
                 
                 <div class="form-group">
-                    <label for="experience">Experience:</label>
+                    <label class="center-label" for="experience">Experience</label>
                     <div class="experience">
                         <div class="exp-sub">
                             <h5>From</h5>
@@ -138,9 +139,25 @@
                             <h5>To</h5>
                             <input type="number" min="1990" max="2025" id="exp-period2" required>
                         </div>
-                        <input type="text" id="experience" placeholder="Organization name" required>
+                        <input type="text" id="org-name" placeholder="Organization name" required>
                     </div>
                 </div> 
+
+                <div class="input-division"></div>
+
+                <div class="form-group">
+                    <label class="center-label" for="socials">Socials</label>
+                    <div class="github">
+                        <label for="github">GitHub:</label>
+                        <input type="url" id="github" required>
+                    </div>
+                    <div class="linkedin">
+                        <label for="linkedin">LinkedIn:</label>
+                        <input type="url" id="linkedin" required>
+                    </div>
+                </div>
+
+                <div class="input-division"></div>
 
                 <button type="submit">Generate CV</button>
             </form>
